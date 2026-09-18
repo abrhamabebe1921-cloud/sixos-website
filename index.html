@@ -1,0 +1,1455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIXOS | Not just support. A partner in your vision.</title>
+  <meta name="description" content="SIXOS provides professionally managed remote teams and business support services for growing businesses worldwide. Not just support. A partner in your vision.">
+  <meta name="theme-color" content="#420D32">
+  
+  <!-- OpenGraph / Social Metadata -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SIXOS | Not just support. A partner in your vision.">
+  <meta property="og:description" content="SIXOS helps growing businesses operate more efficiently with professionally managed remote teams built around their processes, customers, and business needs.">
+  <meta property="og:image" content="assets/sixos-logo.png">
+  
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+
+  <!-- Core Styles -->
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+  <!-- ===================================================
+       FLOATING NAVIGATION COMMAND BAR
+       =================================================== -->
+  <header class="navbar-wrapper" id="navbar-wrapper">
+    <nav class="navbar" aria-label="Main Navigation">
+      <!-- Official SIXOS Logo -->
+      <a href="#home" class="nav-logo-link" aria-label="SIXOS Home">
+        <img src="assets/sixos-logo.png" alt="SIXOS" class="nav-logo-img">
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#home" class="nav-link active" data-nav="home">
+            <span class="nav-dot dot-pink"></span>
+            Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link" data-nav="about">
+            <span class="nav-dot dot-burgundy"></span>
+            About
+          </a>
+        </li>
+        <li class="nav-item has-mega-menu">
+          <a href="#" class="nav-link desktop-dropdown-trigger" data-nav="services" aria-haspopup="true" aria-expanded="false" onclick="event.preventDefault();">
+            <span class="nav-dot dot-magenta"></span>
+            Services
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </a>
+          <!-- Services Mega Menu -->
+          <div class="mega-menu" role="region" aria-label="Services Mega Menu">
+            <div class="mega-menu-grid">
+              <a href="#services" class="mega-menu-card" data-service="customer-support">
+                <div class="mega-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="mega-title">Customer Support</div>
+                  <div class="mega-desc">Live chat, email resolution, order queries & refunds.</div>
+                </div>
+              </a>
+
+              <a href="#services" class="mega-menu-card" data-service="call-center">
+                <div class="mega-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="mega-title">Call Center Support</div>
+                  <div class="mega-desc">Inbound & outbound voice, appointments, follow-ups.</div>
+                </div>
+              </a>
+
+              <a href="#services" class="mega-menu-card" data-service="ecommerce">
+                <div class="mega-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="mega-title">E-commerce Support</div>
+                  <div class="mega-desc">Store ops, order processing, tracking & marketplaces.</div>
+                </div>
+              </a>
+
+              <a href="#services" class="mega-menu-card" data-service="virtual-assistant">
+                <div class="mega-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                  </svg>
+                </div>
+                <div>
+                  <div class="mega-title">Virtual Assistance & Data</div>
+                  <div class="mega-desc">Admin workflows, spreadsheets, research & CRM.</div>
+                </div>
+              </a>
+
+              <a href="#services" class="mega-menu-card" data-service="dedicated-teams" style="grid-column: span 2;">
+                <div class="mega-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="mega-title">Dedicated Teams</div>
+                  <div class="mega-desc">Tailor-crafted remote divisions aligned with your software, shift hours & SOPs.</div>
+                </div>
+              </a>
+            </div>
+            <div class="mega-menu-footer">
+              <span>Managed, supervised, and integrated directly into your workflows.</span>
+              <a href="#services">Explore all capabilities &rarr;</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="#why-sixos" class="nav-link" data-nav="why">
+            <span class="nav-dot dot-gold"></span>
+            Why SIXOS
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#how-it-works" class="nav-link" data-nav="how">
+            <span class="nav-dot dot-blue"></span>
+            How It Works
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#security" class="nav-link" data-nav="security">
+            <span class="nav-dot dot-teal"></span>
+            Security
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link" data-nav="contact">
+            <span class="nav-dot dot-rose"></span>
+            Contact
+          </a>
+        </li>
+      </ul>
+
+      <!-- Navbar Actions -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-sm btn-primary">Book Consultation</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-backdrop" id="mobile-backdrop"></div>
+  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation Drawer">
+    <div>
+      <div class="mobile-drawer-header">
+        <a href="#home" class="nav-logo-link" aria-label="SIXOS Home">
+          <img src="assets/sixos-logo.png" alt="SIXOS" class="nav-logo-img">
+        </a>
+        <button class="mobile-close-btn" id="mobile-close-btn" aria-label="Close mobile navigation">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li>
+          <a href="#" class="mobile-dropdown-trigger">Services</a>
+          <ul class="mobile-services-list">
+            <li><a href="#services" data-service="customer-support">Customer Support</a></li>
+            <li><a href="#services" data-service="call-center">Call Center Support</a></li>
+            <li><a href="#services" data-service="ecommerce">E-commerce Support</a></li>
+            <li><a href="#services" data-service="virtual-assistant">Virtual Assistance & Data</a></li>
+            <li><a href="#services" data-service="dedicated-teams">Dedicated Teams</a></li>
+          </ul>
+        </li>
+        <li><a href="#why-sixos">Why SIXOS</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#security">Security</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="mobile-drawer-footer">
+      <a href="#contact" class="btn btn-primary" style="width: 100%;">Book Consultation</a>
+      <a href="https://wa.me/251921647287" target="_blank" rel="noopener" class="btn btn-whatsapp" style="width: 100%;">Chat on WhatsApp (+251 921 647 287)</a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- ===================================================
+         CINEMATIC HERO SECTION (NEW HEADLINE & SCULPTURAL 3D)
+         =================================================== -->
+    <section class="hero-section" id="home">
+      <div class="hero-bg-glow"></div>
+      <div class="hero-bg-glow-left"></div>
+
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Left Content -->
+          <div class="hero-content">
+            <!-- NEW HERO HEADLINE -->
+            <h1 class="hero-headline">
+              Not just support.<br>
+              <span class="highlight-burgundy">A partner in your vision.</span>
+            </h1>
+
+            <p class="hero-supporting">
+              SIXOS helps growing businesses operate more efficiently with professionally managed remote teams built around their processes, customers, and business needs.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#contact" class="btn btn-lg btn-primary">
+                <span>GET STARTED</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="#services" class="btn btn-lg btn-secondary">
+                <span>EXPLORE SERVICES</span>
+              </a>
+            </div>
+
+            <div class="hero-trust-bar">
+              <div class="hero-trust-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+                <span>Active Daily Supervision</span>
+              </div>
+              <div class="hero-trust-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                <span>Zero Onboarding Friction</span>
+              </div>
+              <div class="hero-trust-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Tailored Around Your SOPs</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right 3D Visual Stage -->
+          <div class="hero-3d-wrapper">
+            <div class="hero-canvas-container" id="hero-canvas-container" title="Interactive SIXOS Operations Core - Drag to inspect nodes">
+              <!-- Three.js Canvas Injected Here -->
+              <!-- Centered SIXOS Color Logo Overlay on 3D Animation (Large Size) -->
+              <div class="hero-3d-logo-overlay" id="hero-3d-logo-overlay" aria-hidden="true">
+                <div class="hero-3d-logo-ring"></div>
+                <img src="assets/sixos-logo-color.png" alt="SIXOS Logo" class="hero-3d-pink-logo" style="width: 250px; height: auto; filter: drop-shadow(0 0 28px rgba(255, 158, 213, 0.9));">
+              </div>
+            </div>
+
+            <!-- Fallback 3D Visual -->
+            <div class="hero-fallback-3d" id="hero-fallback-3d">
+              <div class="fallback-ring fallback-ring-1"></div>
+              <div class="fallback-ring fallback-ring-2"></div>
+              <div class="fallback-core"><img src="assets/sixos-logo-color.png" alt="SIXOS" style="width: 200px; height: auto;"></div>
+            </div>
+
+            <!-- Interactive UI Floating Badges overlaying 3D Nodes -->
+            <div class="hero-3d-overlay" id="hero-3d-overlay">
+              <button class="node-badge node-pos-tl" data-service="customer-support" data-choice-name="Customer Support" title="Click to view Customer Support">
+                <span class="node-badge-icon">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                  </svg>
+                </span>
+                <span class="node-badge-text">
+                  <span class="node-badge-name">Customer Support</span>
+                  <span class="node-badge-tag">24/7 LIVE</span>
+                </span>
+              </button>
+
+              <button class="node-badge node-pos-tr" data-service="call-center" data-choice-name="Call Center Support" title="Click to view Call Center Support">
+                <span class="node-badge-icon">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </span>
+                <span class="node-badge-text">
+                  <span class="node-badge-name">Call Center</span>
+                  <span class="node-badge-tag">VOICE &amp; QUEUE</span>
+                </span>
+              </button>
+
+              <button class="node-badge node-pos-tc" data-service="dedicated-teams" data-choice-name="Dedicated Teams" title="Click to view Dedicated Teams">
+                <span class="node-badge-icon">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </span>
+                <span class="node-badge-text">
+                  <span class="node-badge-name">Dedicated Teams</span>
+                  <span class="node-badge-tag">MANAGED PODS</span>
+                </span>
+              </button>
+
+              <button class="node-badge node-pos-bl" data-service="ecommerce" data-choice-name="E-commerce Support" title="Click to view E-commerce Support">
+                <span class="node-badge-icon">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                  </svg>
+                </span>
+                <span class="node-badge-text">
+                  <span class="node-badge-name">E-Commerce Ops</span>
+                  <span class="node-badge-tag">RETAIL &amp; ORDERS</span>
+                </span>
+              </button>
+
+              <button class="node-badge node-pos-br" data-service="virtual-assistant" data-choice-name="Virtual Assistance & Data Entry" title="Click to view Virtual Assistance">
+                <span class="node-badge-icon">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                  </svg>
+                </span>
+                <span class="node-badge-text">
+                  <span class="node-badge-name">Virtual Assistant</span>
+                  <span class="node-badge-tag">DATA &amp; CRM</span>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         ABOUT SECTION & OPERATIONAL PILLARS
+         =================================================== -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">About SIXOS</div>
+          <h2 class="section-title">Bridging the Gap in Global Remote Operations</h2>
+          <p class="section-desc">
+            SIXOS is a B2B managed services company providing professionally managed remote teams for growing businesses worldwide.
+          </p>
+        </div>
+
+        <div class="about-positioning-card">
+          <div class="about-grid">
+            <div class="about-text">
+              <h3>Neither an Unwieldy Legacy BPO nor a Fragile Freelancer Marketplace.</h3>
+              <p>
+                Traditional large BPO providers are built for giant corporations &mdash; burdened with slow communication, rigid contracts, and depersonalized service. On the other end, hiring individual freelancers often results in fragmented accountability, inconsistent quality, and zero management supervision.
+              </p>
+              <p>
+                <strong>SIXOS creates the optimal middle ground:</strong> high-caliber remote talent backed by structured daily management, tailored onboarding, continuous training, rigorous quality control, and transparent operational reporting.
+              </p>
+            </div>
+            <div class="about-spectrum-box">
+              <div class="spectrum-title">The Support Spectrum</div>
+              <div class="spectrum-bars">
+                <div class="spectrum-row">
+                  <div class="spectrum-label">Legacy BPO Call Centers</div>
+                  <div class="spectrum-status">Rigid, Bureaucratic, High Minimums</div>
+                </div>
+                <div class="spectrum-row sixos-highlight">
+                  <div class="spectrum-label">SIXOS Managed Teams</div>
+                  <div class="spectrum-status">Agile, Supervised, Quality-Controlled</div>
+                </div>
+                <div class="spectrum-row">
+                  <div class="spectrum-label">Individual Freelancers</div>
+                  <div class="spectrum-status">Unsupervised, High Churn, Fragmented</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pillars-grid">
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <div class="pillar-title">Dedicated Professionals</div>
+            <div class="pillar-desc">Vetted, handpicked talent assigned exclusively to your business processes rather than pooled across unrelated accounts.</div>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+            </div>
+            <div class="pillar-title">Active Management</div>
+            <div class="pillar-desc">Experienced operations leads oversee your team's day-to-day attendance, scheduling, workflow adherence, and morale.</div>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+            </div>
+            <div class="pillar-title">Structured Training</div>
+            <div class="pillar-desc">We convert your standard operating procedures (SOPs) into clear training modules, ensuring rapid onboarding and brand alignment.</div>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+            </div>
+            <div class="pillar-title">Real-time Supervision</div>
+            <div class="pillar-desc">Continuous monitoring of ticket queues, response times, and daily outputs prevents bottlenecks before they impact customers.</div>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+            </div>
+            <div class="pillar-title">Quality Control</div>
+            <div class="pillar-desc">Regular sampling, conversation audits, and rubric-based evaluations protect the high standard of your brand customer experience.</div>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+            </div>
+            <div class="pillar-title">Transparent Reporting</div>
+            <div class="pillar-desc">Clear operational visibility with metrics, weekly reviews, and practical recommendations without bloated vanity dashboards.</div>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+            </div>
+            <div class="pillar-title">Flexible Support</div>
+            <div class="pillar-desc">Easily scale headcounts and shift coverage up or down based on seasonality, product launches, or business evolution.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         INTERACTIVE SERVICES SECTION
+         =================================================== -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Services</div>
+          <h2 class="section-title">Support That Works Around Your Business</h2>
+          <p class="section-desc">
+            Explore our five core operational service disciplines. Select any service to view full operational scope and feature details.
+          </p>
+        </div>
+
+        <div class="services-interactive-wrapper">
+          <div class="services-tabs-nav" role="tablist">
+            <button class="service-tab-btn active" data-service="customer-support" role="tab" aria-selected="true">
+              <span class="tab-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+              </span>
+              <span>Customer Support</span>
+            </button>
+
+            <button class="service-tab-btn" data-service="call-center" role="tab" aria-selected="false">
+              <span class="tab-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </span>
+              <span>Call Center Support</span>
+            </button>
+
+            <button class="service-tab-btn" data-service="ecommerce" role="tab" aria-selected="false">
+              <span class="tab-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+              </span>
+              <span>E-commerce Support</span>
+            </button>
+
+            <button class="service-tab-btn" data-service="virtual-assistant" role="tab" aria-selected="false">
+              <span class="tab-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+              </span>
+              <span>Virtual Assistance<br>& Data</span>
+            </button>
+
+            <button class="service-tab-btn" data-service="dedicated-teams" role="tab" aria-selected="false">
+              <span class="tab-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              </span>
+              <span>Dedicated Teams</span>
+            </button>
+          </div>
+
+          <div class="service-pane-content" id="service-pane-content">
+            <div class="service-info-col">
+              <div class="service-pane-badge" id="service-pane-badge">01 / Omnichannel Support</div>
+              <h3 class="service-pane-title" id="service-pane-title">Customer Support</h3>
+              <p class="service-pane-description" id="service-pane-description">
+                Seamless frontline communication that resolves customer questions, turns inquiries into loyalty, and protects your brand reputation around the clock.
+              </p>
+
+              <ul class="service-features-list" id="service-features-list">
+                <li class="feature-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Email support ticket triage</span></li>
+                <li class="feature-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Real-time live chat assistance</span></li>
+                <li class="feature-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Customer inquiries resolution</span></li>
+                <li class="feature-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Order status & questions</span></li>
+                <li class="feature-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Follow-ups & satisfaction checks</span></li>
+                <li class="feature-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Returns, exchanges & refund workflows</span></li>
+              </ul>
+
+              <a href="#contact" class="btn btn-primary" id="service-cta-btn">
+                <span>Request Customer Support Team</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+
+            <div class="service-visual-box">
+              <div class="visual-node-center">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              </div>
+              <div class="visual-node-title" id="service-visual-title">Customer Support Hub</div>
+              <div class="visual-node-sub" id="service-visual-sub">Multichannel resolution pipeline active</div>
+              <div class="visual-flow-chips" id="service-visual-chips">
+                <span class="flow-chip">Live Chat</span>
+                <span class="flow-chip">Email Tickets</span>
+                <span class="flow-chip">Order Issues</span>
+                <span class="flow-chip">Customer Loyalty</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         WHY SIXOS (INTERACTIVE COMPARISON)
+         =================================================== -->
+    <section class="section why-section" id="why-sixos">
+      <div class="why-bg-radial"></div>
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Why SIXOS</div>
+          <h2 class="section-title">An Engineered Operational Ecosystem</h2>
+          <p class="section-desc">
+            See how our managed collaborative model compares against traditional rigid call centers and unmanaged independent freelancers.
+          </p>
+        </div>
+
+        <div class="comparison-grid">
+          <!-- Model 1: Traditional BPO -->
+          <div class="comparison-card">
+            <div>
+              <span class="card-header-badge">Model A</span>
+              <h3 class="card-model-title">Traditional BPO</h3>
+              <p class="card-model-desc">Oversized, rigid organizations optimized for massive volume rather than agile responsiveness.</p>
+              <ul class="comparison-list">
+                <li class="comparison-item negative"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg><span>Rigid, bureaucratic contract structures</span></li>
+                <li class="comparison-item negative"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg><span>High agent turnover and depersonalized care</span></li>
+                <li class="comparison-item negative"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg><span>Expensive overhead and strict minimum headcounts</span></li>
+              </ul>
+            </div>
+            <div style="font-size: 0.85rem; color: rgba(255,255,255,0.5);">Result: Slow to adapt, impersonal client service.</div>
+          </div>
+
+          <!-- Model 2: Individual Freelancers -->
+          <div class="comparison-card">
+            <div>
+              <span class="card-header-badge">Model B</span>
+              <h3 class="card-model-title">Individual Freelancers</h3>
+              <p class="card-model-desc">Direct hires on gig platforms who operate in isolated silos without oversight.</p>
+              <ul class="comparison-list">
+                <li class="comparison-item negative"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg><span>Zero supervision or independent quality audits</span></li>
+                <li class="comparison-item negative"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg><span>No backup or coverage if the person becomes unavailable</span></li>
+                <li class="comparison-item negative"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg><span>You spend leadership hours managing basic tasks</span></li>
+              </ul>
+            </div>
+            <div style="font-size: 0.85rem; color: rgba(255,255,255,0.5);">Result: Inconsistent quality, operational vulnerability.</div>
+          </div>
+
+          <!-- Model 3: SIXOS (Featured) -->
+          <div class="comparison-card card-sixos">
+            <div>
+              <span class="card-header-badge">The SIXOS Advantage</span>
+              <h3 class="card-model-title">SIXOS Managed Ecosystem</h3>
+              <p class="card-model-desc">Dedicated remote professionals integrated into your workflows, supported by management, QA, and structured reporting.</p>
+              <ul class="comparison-list">
+                <li class="comparison-item positive"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span><strong>Dedicated specialists</strong> dedicated to your business</span></li>
+                <li class="comparison-item positive"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span><strong>Hands-on supervision</strong> & daily operational oversight</span></li>
+                <li class="comparison-item positive"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span><strong>Built-in redundancy</strong> & fast coverage replacement</span></li>
+                <li class="comparison-item positive"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span><strong>Flexible scale</strong> starting at 1 dedicated agent</span></li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn btn-white" style="width: 100%;">Partner with SIXOS</a>
+          </div>
+        </div>
+
+        <div class="lifecycle-wrapper">
+          <div class="lifecycle-title">The Continuous SIXOS Management Cycle</div>
+          <div class="lifecycle-subtitle">Every team member is supported by a continuous 6-stage operational framework</div>
+
+          <div class="lifecycle-steps">
+            <div class="lifecycle-step-card"><div class="step-num">STAGE 01</div><div class="step-name">People</div><div class="step-sub">Vetted professionals with verified skills</div></div>
+            <div class="lifecycle-step-card"><div class="step-num">STAGE 02</div><div class="step-name">Management</div><div class="step-sub">Daily lead attendance & queue alignment</div></div>
+            <div class="lifecycle-step-card"><div class="step-num">STAGE 03</div><div class="step-name">Training</div><div class="step-sub">Client SOP assimilation & simulation</div></div>
+            <div class="lifecycle-step-card"><div class="step-num">STAGE 04</div><div class="step-name">Quality Control</div><div class="step-sub">Conversation audits & scorecards</div></div>
+            <div class="lifecycle-step-card"><div class="step-num">STAGE 05</div><div class="step-name">Reporting</div><div class="step-sub">Transparent KPIs & actionable reviews</div></div>
+            <div class="lifecycle-step-card"><div class="step-num">STAGE 06</div><div class="step-name">Continuous Imp.</div><div class="step-sub">SOP optimization & efficiency gains</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         HOW SIXOS WORKS (CINEMATIC TIMELINE)
+         =================================================== -->
+    <section class="section timeline-section" id="how-it-works">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">How It Works</div>
+          <h2 class="section-title">A Clear, Guided Path to Deployment</h2>
+          <p class="section-desc">
+            From initial requirements to live operations, our structured process ensures zero disruption to your daily business.
+          </p>
+        </div>
+
+        <div class="timeline-flow">
+          <div class="timeline-line"></div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker">01</div>
+            <div class="timeline-card">
+              <div class="timeline-stage-tag">Phase One</div>
+              <h3 class="timeline-title">UNDERSTAND</h3>
+              <p class="timeline-desc">
+                We deep dive into your business model, customer touchpoints, current ticket volume or admin workflows, shift coverage requirements, and specific toolsets (e.g. Zendesk, Gorgias, Shopify, Slack, Asana).
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker">02</div>
+            <div class="timeline-card">
+              <div class="timeline-stage-tag">Phase Two</div>
+              <h3 class="timeline-title">BUILD</h3>
+              <p class="timeline-desc">
+                We architect your customized support structure: selecting candidate profiles, establishing SLA benchmarks, defining escalation paths, and configuring daily operational communications.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker">03</div>
+            <div class="timeline-card">
+              <div class="timeline-stage-tag">Phase Three</div>
+              <h3 class="timeline-title">TRAIN</h3>
+              <p class="timeline-desc">
+                Selected team members complete intensive onboarding focused directly on your SOPs, brand voice, and response protocols, followed by mock ticket evaluations before taking live work.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item timeline-item--final">
+            <div class="timeline-marker timeline-marker--final">04</div>
+            <div class="timeline-card timeline-card--final">
+              <div class="final-step-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>FINAL STEP &mdash; YOU'RE LIVE</span>
+              </div>
+              <div class="timeline-stage-tag">Phase Four</div>
+              <h3 class="timeline-title">DELIVER</h3>
+              <p class="timeline-desc">
+                Your team goes live with active management supervision. Leads monitor queues, verify ticket resolution quality, and provide instant coaching to ensure steady performance from day one.
+              </p>
+              <div class="final-step-info-box">
+                <div class="final-info-row">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  <span>Average launch time: <strong>5&ndash;10 business days</strong></span>
+                </div>
+                <div class="final-info-row">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                  <span>Active daily supervision from <strong>Day One</strong></span>
+                </div>
+                <div class="final-info-row">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                  <span>Zero disruption to your existing operations</span>
+                </div>
+                <a href="#contact" class="btn btn-primary final-step-cta">
+                  <span>Start Your Journey</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker">05</div>
+            <div class="timeline-card">
+              <div class="timeline-stage-tag">Phase Five</div>
+              <h3 class="timeline-title">MEASURE & IMPROVE</h3>
+              <p class="timeline-desc">
+                Continuous performance reviews, weekly KPI summaries, and proactive process improvements. As your business grows, we scale your team smoothly without administrative overhead.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         TARGET INDUSTRIES
+         =================================================== -->
+    <section class="section industries-section" id="industries">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Industries</div>
+          <h2 class="section-title">Built for Modern Businesses</h2>
+          <p class="section-desc">
+            We adapt directly to the operational demands and software ecosystems of high-growth sectors.
+          </p>
+        </div>
+
+        <div class="industries-grid">
+          <div class="industry-card">
+            <div class="industry-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg></div>
+            <div class="industry-name">E-commerce</div>
+            <div class="industry-desc">Order tracking, return processing, multi-channel marketplace support (Shopify, Amazon, eBay), and cart conversion assistance.</div>
+          </div>
+
+          <div class="industry-card">
+            <div class="industry-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg></div>
+            <div class="industry-name">SaaS & Technology</div>
+            <div class="industry-desc">Tier-1 technical support, product onboarding walkthroughs, feature guidance, bug reporting, and user documentation updates.</div>
+          </div>
+
+          <div class="industry-card">
+            <div class="industry-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg></div>
+            <div class="industry-name">Startups</div>
+            <div class="industry-desc">Fast, agile operational coverage that allows founders and key engineers to focus entirely on product without hiring full-time back-office staff.</div>
+          </div>
+
+          <div class="industry-card">
+            <div class="industry-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg></div>
+            <div class="industry-name">Digital Businesses</div>
+            <div class="industry-desc">Community management, user engagement, content moderation, help desk operations, and transactional inquiries.</div>
+          </div>
+
+          <div class="industry-card">
+            <div class="industry-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="industry-name">Online Education</div>
+            <div class="industry-desc">Student onboarding, learning portal navigation assistance, assignment submission questions, and webinar logistics support.</div>
+          </div>
+
+          <div class="industry-card">
+            <div class="industry-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg></div>
+            <div class="industry-name">Agencies</div>
+            <div class="industry-desc">White-label client support, reporting spreadsheet assembly, administrative research, and client task execution.</div>
+          </div>
+
+          <div class="industry-card">
+            <div class="industry-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"></path></svg></div>
+            <div class="industry-name">Travel Businesses</div>
+            <div class="industry-desc">Reservation assistance, itinerary changes, customer rebooking, travel inquiries, and guest communications.</div>
+          </div>
+
+          <div class="industry-card">
+            <div class="industry-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg></div>
+            <div class="industry-name">Customer-Facing Orgs</div>
+            <div class="industry-desc">High-touch organizations requiring consistent, warm brand representation across email, chat, and voice channels.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ===================================================
+         SECURITY & GOVERNANCE
+         =================================================== -->
+    <section class="section security-section" id="security">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Security & Protection</div>
+          <h2 class="section-title">A Protected Operational Ecosystem</h2>
+          <p class="section-desc">
+            We treat your client data, business accounts, and internal communications with strict procedural rigor.
+          </p>
+        </div>
+
+        <div class="security-grid">
+          <div class="security-card">
+            <div class="security-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><path d="M12 18v-4"></path><path d="M8 14h8"></path></svg></div>
+            <div class="security-card-title">Confidentiality Agreements</div>
+            <div class="security-card-desc">Binding non-disclosure agreements (NDAs) signed with every team member prior to onboarding on your account.</div>
+          </div>
+
+          <div class="security-card">
+            <div class="security-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></div>
+            <div class="security-card-title">Strict Access Controls</div>
+            <div class="security-card-desc">Least-privilege access principles, secure password managers, and role-based permissions to ensure agents only access what they need.</div>
+          </div>
+
+          <div class="security-card">
+            <div class="security-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div>
+            <div class="security-card-title">Employee Security Training</div>
+            <div class="security-card-desc">Mandatory training covering phishing prevention, data protection, credential safety, and safe browsing hygiene.</div>
+          </div>
+
+          <div class="security-card">
+            <div class="security-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
+            <div class="security-card-title">Secure Account Practices</div>
+            <div class="security-card-desc">Enforcement of two-factor authentication (2FA/MFA) across all client tools, business portals, and internal communication channels.</div>
+          </div>
+
+          <div class="security-card" style="grid-column: 1 / -1;">
+            <div class="security-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></div>
+            <div class="security-card-title">Client-Specific Data Handling Protocols</div>
+            <div class="security-card-desc">
+              Every business has unique operational guidelines. We configure our workflows, browser sandboxes, and VPN requirements according to your specific industry standards, contracts, and internal compliance policies.
+            </div>
+          </div>
+        </div>
+
+        <div class="security-disclaimer">
+          Security and governance practices are adapted strictly in coordination with client infrastructure, contracts, and specific data protection guidelines.
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         MISSION & VISION PANELS
+         =================================================== -->
+    <section class="section mission-vision-section">
+      <div class="container">
+        <div class="mv-grid">
+          <div class="mv-panel">
+            <span class="mv-tag">Our Mission</span>
+            <div class="mv-quote">
+              &ldquo;Help businesses deliver better customer experiences and operate more efficiently by providing reliable, professional, flexible remote support teams.&rdquo;
+            </div>
+          </div>
+
+          <div class="mv-panel">
+            <span class="mv-tag">Our Vision</span>
+            <div class="mv-quote">
+              &ldquo;Become a trusted global BPO partner known for reliable people, excellent service, and modern remote business solutions.&rdquo;
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         INTERACTIVE MULTI-STEP CONSULTATION WIZARD & DIRECT CHANNELS
+         =================================================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Direct Partnership</div>
+          <h2 class="section-title">Let's Build Your Remote Team.</h2>
+          <p class="section-desc">
+            Complete the 3-step consultation builder to configure your operational requirements, then book a direct strategy call via WhatsApp.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Direct Channels Card (Replaced Telegram with USA WhatsApp!) -->
+          <div class="direct-channels-card">
+            <h3 class="channels-title">Direct Verified Channels</h3>
+            <p class="channels-sub">Instant response from our operations team leads.</p>
+
+            <div class="channel-items">
+              <!-- Official Email -->
+              <a href="mailto:hello@si6os.com" class="channel-btn" title="Email hello@si6os.com">
+                <div class="channel-icon icon-email">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-label">Official Email</span>
+                  <span class="channel-value">hello@si6os.com</span>
+                </div>
+              </a>
+
+              <!-- Ethiopia WhatsApp Direct -->
+              <a href="https://wa.me/251921647287" target="_blank" rel="noopener" class="channel-btn" title="Chat on Ethiopia WhatsApp">
+                <div class="channel-icon icon-whatsapp">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-label">Ethiopia WhatsApp (Operations Hub)</span>
+                  <span class="channel-value">+251 921 647 287</span>
+                </div>
+              </a>
+
+              <!-- USA WhatsApp Direct (Replaced Telegram) -->
+              <a href="https://wa.me/12408937427" target="_blank" rel="noopener" class="channel-btn" title="Chat on USA WhatsApp">
+                <div class="channel-icon icon-whatsapp">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-label">USA WhatsApp (Client Relations)</span>
+                  <span class="channel-value">+1 (240) 893-7427</span>
+                </div>
+              </a>
+
+              <!-- Ethiopia Phone -->
+              <a href="tel:+251921647287" class="channel-btn" title="Call Ethiopia Office">
+                <div class="channel-icon icon-phone">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-label">Ethiopia Direct Line</span>
+                  <span class="channel-value">+251 921 647 287</span>
+                </div>
+              </a>
+
+              <!-- USA Phone -->
+              <a href="tel:+12408937427" class="channel-btn" title="Call USA Line">
+                <div class="channel-icon icon-phone">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-label">USA Line</span>
+                  <span class="channel-value">+1 (240) 893-7427</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Interactive Multi-Step Consultation Wizard Card -->
+          <div class="wizard-card">
+            <!-- Progress Tracker -->
+            <div class="wizard-progress-bar">
+              <div class="progress-track-bg"></div>
+              <div class="progress-track-fill" id="progress-track-fill" style="width: 0%;"></div>
+
+              <div class="wizard-step-node active" data-step="1">
+                <div class="step-circle">1</div>
+                <span class="step-label">Your Info</span>
+              </div>
+              <div class="wizard-step-node" data-step="2">
+                <div class="step-circle">2</div>
+                <span class="step-label">Need</span>
+              </div>
+              <div class="wizard-step-node" data-step="3">
+                <div class="step-circle">3</div>
+                <span class="step-label">Timeline</span>
+              </div>
+              <div class="wizard-step-node" data-step="4">
+                <div class="step-circle">4</div>
+                <span class="step-label">Order & Book</span>
+              </div>
+            </div>
+
+            <!-- STEP 1: Client Information -->
+            <div class="wizard-step-pane active" data-step="1">
+              <h3 class="step-title">Tell Us About Yourself</h3>
+              <p class="step-desc">Enter your contact details so our leadership team can personalize your proposal.</p>
+
+              <!-- Name + Email side by side on desktop -->
+              <div class="form-row-2col">
+                <div class="form-group-colorful">
+                  <label class="form-label-colorful" for="wizard-name">
+                    Full Name <span class="required-star">*</span>
+                  </label>
+                  <div class="input-box-colorful">
+                    <div class="input-icon-left">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    </div>
+                    <input type="text" id="wizard-name" class="form-input-colorful" placeholder="e.g. Sarah Jenkins" required autocomplete="name">
+                  </div>
+                </div>
+
+                <div class="form-group-colorful">
+                  <label class="form-label-colorful" for="wizard-email">
+                    Business Email <span class="required-star">*</span>
+                  </label>
+                  <div class="input-box-colorful">
+                    <div class="input-icon-left">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </div>
+                    <input type="email" id="wizard-email" class="form-input-colorful" placeholder="sarah@yourcompany.com" required autocomplete="email">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Phone Number + Company side by side on desktop -->
+              <div class="form-row-2col">
+                <div class="form-group-colorful">
+                  <div class="form-label-wrapper">
+                    <label class="form-label-colorful" for="wizard-whatsapp">
+                      Phone Number
+                    </label>
+                  </div>
+                  <div class="input-box-colorful phone-input-box">
+                    <div class="phone-country-selector" id="phone-country-selector">
+                      <button type="button" class="phone-country-btn" id="phone-country-btn" aria-haspopup="listbox" aria-expanded="false">
+                        <span class="phone-country-flag" id="phone-selected-flag"><img src="assets/flags/us.png" alt="United States" class="phone-flag-img"></span>
+                        <span class="phone-country-code" id="phone-selected-code">+1</span>
+                        <svg class="phone-dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                      </button>
+                    </div>
+                    <input type="tel" id="wizard-whatsapp" class="form-input-colorful phone-number-input" placeholder="Enter phone number" autocomplete="tel">
+                  </div>
+                </div>
+
+                <div class="form-group-colorful">
+                  <div class="form-label-wrapper">
+                    <label class="form-label-colorful" for="wizard-company">
+                      Company Name
+                    </label>
+                  </div>
+                  <div class="input-box-colorful">
+                    <div class="input-icon-left">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                    </div>
+                    <input type="text" id="wizard-company" class="form-input-colorful" placeholder="Your Brand / Enterprise" autocomplete="organization">
+                  </div>
+                </div>
+              </div>
+
+              <div class="wizard-nav-buttons" style="justify-content: flex-end;">
+                <button type="button" class="btn btn-primary" id="step-1-next">
+                  <span>Continue: What Do You Need?</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- STEP 2: "What do you need?" & "How many people?" -->
+            <div class="wizard-step-pane" data-step="2">
+              <h3 class="step-title">What do you need?</h3>
+              <p class="step-desc">Select the primary service discipline for your dedicated remote team.</p>
+
+              <div class="service-select-grid">
+                <div class="service-choice-card selected" data-choice-name="Customer Support">
+                  <div class="choice-radio"></div>
+                  <div>
+                    <div class="choice-title">Customer Support</div>
+                    <div class="choice-sub">Email tickets, live chat, order inquiries & returns.</div>
+                  </div>
+                </div>
+
+                <div class="service-choice-card" data-choice-name="Call Center Support">
+                  <div class="choice-radio"></div>
+                  <div>
+                    <div class="choice-title">Call Center Support</div>
+                    <div class="choice-sub">Inbound resolution, outbound follow-ups & bookings.</div>
+                  </div>
+                </div>
+
+                <div class="service-choice-card" data-choice-name="E-commerce Support">
+                  <div class="choice-radio"></div>
+                  <div>
+                    <div class="choice-title">E-commerce Support</div>
+                    <div class="choice-sub">Shopify / Amazon store ops, order validation & care.</div>
+                  </div>
+                </div>
+
+                <div class="service-choice-card" data-choice-name="Virtual Assistance & Data Entry">
+                  <div class="choice-radio"></div>
+                  <div>
+                    <div class="choice-title">Virtual Assistance & Data</div>
+                    <div class="choice-sub">CRM hygiene, spreadsheets, admin tasks & research.</div>
+                  </div>
+                </div>
+
+                <div class="service-choice-card" data-choice-name="Dedicated Teams">
+                  <div class="choice-radio"></div>
+                  <div>
+                    <div class="choice-title">Dedicated Teams</div>
+                    <div class="choice-sub">Tailored operational pods aligned with your SOPs.</div>
+                  </div>
+                </div>
+
+                <div class="service-choice-card" data-choice-name="Custom Multi-service Department">
+                  <div class="choice-radio"></div>
+                  <div>
+                    <div class="choice-title">Custom Department</div>
+                    <div class="choice-sub">Hybrid voice, chat & back-office operations.</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- "How many people?" Headcount Input -->
+              <div class="form-group-colorful">
+                <label class="form-label-colorful" for="headcount">
+                  How many people?
+                </label>
+                <div class="headcount-box">
+                  <div class="headcount-pills">
+                    <button type="button" class="headcount-pill selected" data-count="1 Specialist">1 Specialist</button>
+                    <button type="button" class="headcount-pill" data-count="2-3 Specialists">2&ndash;3 Specialists</button>
+                    <button type="button" class="headcount-pill" data-count="4-7 Team Members">4&ndash;7 Team Members</button>
+                    <button type="button" class="headcount-pill" data-count="8+ Department">8+ Full Department</button>
+                  </div>
+                  <div class="headcount-custom-wrapper">
+                    <span style="font-size: 0.85rem; color: var(--color-secondary-gray);">Or enter custom number:</span>
+                    <input type="number" min="1" max="100" id="custom-headcount-input" class="headcount-custom-input" placeholder="e.g. 5">
+                  </div>
+                </div>
+              </div>
+
+              <div class="wizard-nav-buttons">
+                <button type="button" class="btn btn-secondary" id="step-2-back">&larr; Back</button>
+                <button type="button" class="btn btn-primary" id="step-2-next">
+                  <span>Continue: Timeline & Details</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- STEP 3: "When do you need them?" & "Anything else? (optional)" -->
+            <div class="wizard-step-pane" data-step="3">
+              <h3 class="step-title">When do you need them?</h3>
+              <p class="step-desc">Select your target launch timeline so we can allocate recruitment and training resources.</p>
+
+              <div class="timeline-pills">
+                <div class="timeline-pill-choice selected" data-time="Immediately (within 48 hours)">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                  <span>Immediately (within 48 hours)</span>
+                </div>
+                <div class="timeline-pill-choice" data-time="Within 1-2 Weeks">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  <span>Within 1&ndash;2 Weeks</span>
+                </div>
+                <div class="timeline-pill-choice" data-time="Within 1 Month">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                  <span>Within 1 Month</span>
+                </div>
+                <div class="timeline-pill-choice" data-time="Flexible / Exploring for future quarter">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                  <span>Flexible / Exploring for future quarter</span>
+                </div>
+              </div>
+
+              <!-- Anything else? (optional) with comfortable medium space -->
+              <div class="form-group-colorful">
+                <div class="form-label-wrapper">
+                  <label class="form-label-colorful" for="wizard-notes">
+                    Anything else? <span class="field-tag-optional">Optional</span>
+                  </label>
+                </div>
+                <div class="input-box-colorful input-box-textarea">
+                  <textarea id="wizard-notes" class="form-textarea-colorful" rows="5" placeholder="Describe any specific tool requirements (e.g. Zendesk, Shopify, Slack), shift hours needed, language requirements, or special notes..."></textarea>
+                </div>
+              </div>
+
+              <div class="wizard-nav-buttons">
+                <button type="button" class="btn btn-secondary" id="step-3-back">&larr; Back</button>
+                <button type="button" class="btn btn-primary" id="step-3-next">
+                  <span>Review & Book a Call</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- STEP 4: Review Summary & WhatsApp Dispatch -->
+            <div class="wizard-step-pane" data-step="4">
+
+              <!-- Step 4 Header -->
+              <div class="step4-header">
+                <div class="step4-badge">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Almost There!</span>
+                </div>
+                <h3 class="step-title" style="margin-bottom: 0.25rem;">Review &amp; Send Your Request</h3>
+                <p class="step-desc" style="margin-bottom: 0;">Confirm your details below, then reach us instantly via WhatsApp or email.</p>
+              </div>
+
+              <!-- Order Summary Panel -->
+              <div class="order-summary-panel">
+                <div class="summary-panel-title">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                  Your Consultation Summary
+                </div>
+                <div class="summary-row"><span class="summary-key">Client Name</span><span class="summary-val" id="summary-name">&mdash;</span></div>
+                <div class="summary-row"><span class="summary-key">Company / Brand</span><span class="summary-val" id="summary-company">&mdash;</span></div>
+                <div class="summary-row"><span class="summary-key">Business Email</span><span class="summary-val" id="summary-email">&mdash;</span></div>
+                <div class="summary-row"><span class="summary-key">Phone Number</span><span class="summary-val" id="summary-phone">&mdash;</span></div>
+                <div class="summary-row summary-row--highlight"><span class="summary-key">Service Needed</span><span class="summary-val" id="summary-service">&mdash;</span></div>
+                <div class="summary-row summary-row--highlight"><span class="summary-key">Team Size</span><span class="summary-val" id="summary-headcount">&mdash;</span></div>
+                <div class="summary-row"><span class="summary-key">Target Timeline</span><span class="summary-val" id="summary-timeline">&mdash;</span></div>
+                <div class="summary-row summary-row--notes"><span class="summary-key">Notes &amp; Tools</span><span class="summary-val" id="summary-notes">&mdash;</span></div>
+              </div>
+
+              <!-- Send Action Buttons -->
+              <div class="step4-actions">
+                <div class="step4-actions-label">Choose how to send your request:</div>
+
+                <!-- Ethiopia WhatsApp -->
+                <button type="button" class="btn step4-wa-btn step4-wa-primary" id="send-order-whatsapp-btn">
+                  <div class="step4-btn-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                  </div>
+                  <div class="step4-btn-text">
+                    <span class="step4-btn-title">Send to WhatsApp</span>
+                    <span class="step4-btn-sub">+251 921 647 287 &nbsp;Â·&nbsp; Operations Hub</span>
+                  </div>
+                </button>
+
+                <!-- Divider -->
+                <div class="step4-divider"><span>or reach us by email</span></div>
+
+                <!-- Email Button -->
+                <button type="button" class="btn step4-email-btn" id="send-order-email-btn">
+                  <div class="step4-btn-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  </div>
+                  <div class="step4-btn-text">
+                    <span class="step4-btn-title">Send via Email</span>
+                    <span class="step4-btn-sub">hello@si6os.com</span>
+                  </div>
+                </button>
+              </div>
+
+              <!-- Success Confirmation Banner (Shown upon dispatch) -->
+              <div class="step4-success-banner" id="step4-success-banner" style="display: none;">
+                <div class="success-banner-icon">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <div class="success-banner-content">
+                  <h4 class="success-banner-title">Information Sent Successfully! 🎉</h4>
+                  <p class="success-banner-desc" id="success-banner-text">
+                    Thank you! Your consultation request has been dispatched. Our operations team at SIXOS will contact you shortly.
+                  </p>
+                  <div class="success-banner-actions">
+                    <button type="button" class="btn btn-sm btn-white" id="reset-wizard-btn">Submit Another Request</button>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================================================
+       PREMIUM BURGUNDY FOOTER
+       =================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Logo & Tagline -->
+        <div>
+          <div class="footer-logo-container">
+            <img src="assets/sixos-logo.png" alt="SIXOS" class="footer-logo-img">
+          </div>
+          <div class="footer-tagline">
+            Not just support. A partner in your vision.
+          </div>
+          <p style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.7); max-width: 320px; line-height: 1.6;">
+            A premier B2B managed services company connecting growing global enterprises with supervised, dedicated remote operations.
+          </p>
+        </div>
+
+        <!-- Quick Navigation -->
+        <div>
+          <div class="footer-heading">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About SIXOS</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#why-sixos">Why SIXOS</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#security">Security & Governance</a></li>
+          </ul>
+        </div>
+
+        <!-- Operational Services -->
+        <div>
+          <div class="footer-heading">Capabilities</div>
+          <ul class="footer-links">
+            <li><a href="#services" data-service="customer-support">Customer Support</a></li>
+            <li><a href="#services" data-service="call-center">Call Center Support</a></li>
+            <li><a href="#services" data-service="ecommerce">E-commerce Support</a></li>
+            <li><a href="#services" data-service="virtual-assistant">Virtual Assistance & Data</a></li>
+            <li><a href="#services" data-service="dedicated-teams">Dedicated Teams</a></li>
+          </ul>
+        </div>
+
+        <!-- Official Contact Details -->
+        <div>
+          <div class="footer-heading">Official Contact</div>
+          <ul class="footer-links" style="gap: 0.9rem;">
+            <li>
+              <strong>Email:</strong><br>
+              <a href="mailto:hello@si6os.com">hello@si6os.com</a>
+            </li>
+            <li>
+              <strong>Ethiopia WhatsApp (Operations):</strong><br>
+              <a href="https://wa.me/251921647287" target="_blank" rel="noopener">+251 921 647 287</a>
+            </li>
+            <li>
+              <strong>USA WhatsApp (Client Relations):</strong><br>
+              <a href="https://wa.me/12408937427" target="_blank" rel="noopener">+1 (240) 893-7427</a>
+            </li>
+            <li>
+              <strong>USA Phone:</strong><br>
+              <a href="tel:+12408937427">+1 (240) 893-7427</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 SIXOS. All rights reserved.</div>
+        <div>Remote Business Operations &bull; Global BPO Partner</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="vendor/three.min.js"></script>
+  <script src="scripts/three-scene.js"></script>
+  <script src="scripts/app.js"></script>
+  <!-- ========================================================
+       COUNTRY CODE PICKER MODAL (top of screen overlay)
+       ======================================================== -->
+  <div class="cp-overlay" id="cp-overlay" aria-hidden="true"></div>
+  <div class="cp-modal" id="cp-modal" role="dialog" aria-modal="true" aria-label="Select Country Code" aria-hidden="true">
+    <div class="cp-modal-header">
+      <div class="cp-header-title-wrap">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+        <h3 class="cp-modal-title">Select Country Code</h3>
+      </div>
+      <button type="button" class="cp-close-btn" id="cp-close-btn" aria-label="Close dialog">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    <div class="cp-search-wrap">
+      <svg class="cp-search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      <input type="text" id="cp-search" class="cp-search-input" placeholder="Search by country name or code (e.g. Ethiopia, +1)..." autocomplete="off" spellcheck="false">
+      <button type="button" class="cp-search-clear" id="cp-search-clear" aria-label="Clear search" style="display:none;">&times;</button>
+    </div>
+    <ul class="cp-list" id="cp-list" role="listbox">
+      <li class="cp-item" data-code="+1" data-name="United States" data-iso="us"><span class="cp-flag"><img src="assets/flags/us.png" alt="United States" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">United States</span><span class="cp-code">+1</span></li>
+      <li class="cp-item" data-code="+1" data-name="Canada" data-iso="ca"><span class="cp-flag"><img src="assets/flags/ca.png" alt="Canada" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Canada</span><span class="cp-code">+1</span></li>
+      <li class="cp-item" data-code="+44" data-name="United Kingdom" data-iso="gb"><span class="cp-flag"><img src="assets/flags/gb.png" alt="United Kingdom" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">United Kingdom</span><span class="cp-code">+44</span></li>
+      <li class="cp-item" data-code="+251" data-name="Ethiopia" data-iso="et"><span class="cp-flag"><img src="assets/flags/et.png" alt="Ethiopia" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Ethiopia</span><span class="cp-code">+251</span></li>
+      <li class="cp-item" data-code="+966" data-name="Saudi Arabia" data-iso="sa"><span class="cp-flag"><img src="assets/flags/sa.png" alt="Saudi Arabia" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Saudi Arabia</span><span class="cp-code">+966</span></li>
+      <li class="cp-item" data-code="+971" data-name="UAE" data-iso="ae"><span class="cp-flag"><img src="assets/flags/ae.png" alt="UAE" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">UAE</span><span class="cp-code">+971</span></li>
+      <li class="cp-item" data-code="+49" data-name="Germany" data-iso="de"><span class="cp-flag"><img src="assets/flags/de.png" alt="Germany" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Germany</span><span class="cp-code">+49</span></li>
+      <li class="cp-item" data-code="+33" data-name="France" data-iso="fr"><span class="cp-flag"><img src="assets/flags/fr.png" alt="France" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">France</span><span class="cp-code">+33</span></li>
+      <li class="cp-item" data-code="+39" data-name="Italy" data-iso="it"><span class="cp-flag"><img src="assets/flags/it.png" alt="Italy" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Italy</span><span class="cp-code">+39</span></li>
+      <li class="cp-item" data-code="+34" data-name="Spain" data-iso="es"><span class="cp-flag"><img src="assets/flags/es.png" alt="Spain" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Spain</span><span class="cp-code">+34</span></li>
+      <li class="cp-item" data-code="+31" data-name="Netherlands" data-iso="nl"><span class="cp-flag"><img src="assets/flags/nl.png" alt="Netherlands" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Netherlands</span><span class="cp-code">+31</span></li>
+      <li class="cp-item" data-code="+46" data-name="Sweden" data-iso="se"><span class="cp-flag"><img src="assets/flags/se.png" alt="Sweden" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Sweden</span><span class="cp-code">+46</span></li>
+      <li class="cp-item" data-code="+47" data-name="Norway" data-iso="no"><span class="cp-flag"><img src="assets/flags/no.png" alt="Norway" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Norway</span><span class="cp-code">+47</span></li>
+      <li class="cp-item" data-code="+45" data-name="Denmark" data-iso="dk"><span class="cp-flag"><img src="assets/flags/dk.png" alt="Denmark" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Denmark</span><span class="cp-code">+45</span></li>
+      <li class="cp-item" data-code="+358" data-name="Finland" data-iso="fi"><span class="cp-flag"><img src="assets/flags/fi.png" alt="Finland" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Finland</span><span class="cp-code">+358</span></li>
+      <li class="cp-item" data-code="+41" data-name="Switzerland" data-iso="ch"><span class="cp-flag"><img src="assets/flags/ch.png" alt="Switzerland" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Switzerland</span><span class="cp-code">+41</span></li>
+      <li class="cp-item" data-code="+32" data-name="Belgium" data-iso="be"><span class="cp-flag"><img src="assets/flags/be.png" alt="Belgium" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Belgium</span><span class="cp-code">+32</span></li>
+      <li class="cp-item" data-code="+43" data-name="Austria" data-iso="at"><span class="cp-flag"><img src="assets/flags/at.png" alt="Austria" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Austria</span><span class="cp-code">+43</span></li>
+      <li class="cp-item" data-code="+48" data-name="Poland" data-iso="pl"><span class="cp-flag"><img src="assets/flags/pl.png" alt="Poland" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Poland</span><span class="cp-code">+48</span></li>
+      <li class="cp-item" data-code="+351" data-name="Portugal" data-iso="pt"><span class="cp-flag"><img src="assets/flags/pt.png" alt="Portugal" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Portugal</span><span class="cp-code">+351</span></li>
+      <li class="cp-item" data-code="+30" data-name="Greece" data-iso="gr"><span class="cp-flag"><img src="assets/flags/gr.png" alt="Greece" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Greece</span><span class="cp-code">+30</span></li>
+      <li class="cp-item" data-code="+7" data-name="Russia" data-iso="ru"><span class="cp-flag"><img src="assets/flags/ru.png" alt="Russia" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Russia</span><span class="cp-code">+7</span></li>
+      <li class="cp-item" data-code="+380" data-name="Ukraine" data-iso="ua"><span class="cp-flag"><img src="assets/flags/ua.png" alt="Ukraine" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Ukraine</span><span class="cp-code">+380</span></li>
+      <li class="cp-item" data-code="+90" data-name="Turkey" data-iso="tr"><span class="cp-flag"><img src="assets/flags/tr.png" alt="Turkey" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Turkey</span><span class="cp-code">+90</span></li>
+      <li class="cp-item" data-code="+20" data-name="Egypt" data-iso="eg"><span class="cp-flag"><img src="assets/flags/eg.png" alt="Egypt" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Egypt</span><span class="cp-code">+20</span></li>
+      <li class="cp-item" data-code="+27" data-name="South Africa" data-iso="za"><span class="cp-flag"><img src="assets/flags/za.png" alt="South Africa" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">South Africa</span><span class="cp-code">+27</span></li>
+      <li class="cp-item" data-code="+234" data-name="Nigeria" data-iso="ng"><span class="cp-flag"><img src="assets/flags/ng.png" alt="Nigeria" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Nigeria</span><span class="cp-code">+234</span></li>
+      <li class="cp-item" data-code="+254" data-name="Kenya" data-iso="ke"><span class="cp-flag"><img src="assets/flags/ke.png" alt="Kenya" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Kenya</span><span class="cp-code">+254</span></li>
+      <li class="cp-item" data-code="+233" data-name="Ghana" data-iso="gh"><span class="cp-flag"><img src="assets/flags/gh.png" alt="Ghana" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Ghana</span><span class="cp-code">+233</span></li>
+      <li class="cp-item" data-code="+255" data-name="Tanzania" data-iso="tz"><span class="cp-flag"><img src="assets/flags/tz.png" alt="Tanzania" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Tanzania</span><span class="cp-code">+255</span></li>
+      <li class="cp-item" data-code="+256" data-name="Uganda" data-iso="ug"><span class="cp-flag"><img src="assets/flags/ug.png" alt="Uganda" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Uganda</span><span class="cp-code">+256</span></li>
+      <li class="cp-item" data-code="+212" data-name="Morocco" data-iso="ma"><span class="cp-flag"><img src="assets/flags/ma.png" alt="Morocco" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Morocco</span><span class="cp-code">+212</span></li>
+      <li class="cp-item" data-code="+213" data-name="Algeria" data-iso="dz"><span class="cp-flag"><img src="assets/flags/dz.png" alt="Algeria" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Algeria</span><span class="cp-code">+213</span></li>
+      <li class="cp-item" data-code="+216" data-name="Tunisia" data-iso="tn"><span class="cp-flag"><img src="assets/flags/tn.png" alt="Tunisia" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Tunisia</span><span class="cp-code">+216</span></li>
+      <li class="cp-item" data-code="+249" data-name="Sudan" data-iso="sd"><span class="cp-flag"><img src="assets/flags/sd.png" alt="Sudan" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Sudan</span><span class="cp-code">+249</span></li>
+      <li class="cp-item" data-code="+252" data-name="Somalia" data-iso="so"><span class="cp-flag"><img src="assets/flags/so.png" alt="Somalia" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Somalia</span><span class="cp-code">+252</span></li>
+      <li class="cp-item" data-code="+91" data-name="India" data-iso="in"><span class="cp-flag"><img src="assets/flags/in.png" alt="India" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">India</span><span class="cp-code">+91</span></li>
+      <li class="cp-item" data-code="+92" data-name="Pakistan" data-iso="pk"><span class="cp-flag"><img src="assets/flags/pk.png" alt="Pakistan" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Pakistan</span><span class="cp-code">+92</span></li>
+      <li class="cp-item" data-code="+880" data-name="Bangladesh" data-iso="bd"><span class="cp-flag"><img src="assets/flags/bd.png" alt="Bangladesh" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Bangladesh</span><span class="cp-code">+880</span></li>
+      <li class="cp-item" data-code="+94" data-name="Sri Lanka" data-iso="lk"><span class="cp-flag"><img src="assets/flags/lk.png" alt="Sri Lanka" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Sri Lanka</span><span class="cp-code">+94</span></li>
+      <li class="cp-item" data-code="+977" data-name="Nepal" data-iso="np"><span class="cp-flag"><img src="assets/flags/np.png" alt="Nepal" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Nepal</span><span class="cp-code">+977</span></li>
+      <li class="cp-item" data-code="+86" data-name="China" data-iso="cn"><span class="cp-flag"><img src="assets/flags/cn.png" alt="China" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">China</span><span class="cp-code">+86</span></li>
+      <li class="cp-item" data-code="+81" data-name="Japan" data-iso="jp"><span class="cp-flag"><img src="assets/flags/jp.png" alt="Japan" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Japan</span><span class="cp-code">+81</span></li>
+      <li class="cp-item" data-code="+82" data-name="South Korea" data-iso="kr"><span class="cp-flag"><img src="assets/flags/kr.png" alt="South Korea" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">South Korea</span><span class="cp-code">+82</span></li>
+      <li class="cp-item" data-code="+63" data-name="Philippines" data-iso="ph"><span class="cp-flag"><img src="assets/flags/ph.png" alt="Philippines" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Philippines</span><span class="cp-code">+63</span></li>
+      <li class="cp-item" data-code="+62" data-name="Indonesia" data-iso="id"><span class="cp-flag"><img src="assets/flags/id.png" alt="Indonesia" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Indonesia</span><span class="cp-code">+62</span></li>
+      <li class="cp-item" data-code="+60" data-name="Malaysia" data-iso="my"><span class="cp-flag"><img src="assets/flags/my.png" alt="Malaysia" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Malaysia</span><span class="cp-code">+60</span></li>
+      <li class="cp-item" data-code="+65" data-name="Singapore" data-iso="sg"><span class="cp-flag"><img src="assets/flags/sg.png" alt="Singapore" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Singapore</span><span class="cp-code">+65</span></li>
+      <li class="cp-item" data-code="+66" data-name="Thailand" data-iso="th"><span class="cp-flag"><img src="assets/flags/th.png" alt="Thailand" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Thailand</span><span class="cp-code">+66</span></li>
+      <li class="cp-item" data-code="+84" data-name="Vietnam" data-iso="vn"><span class="cp-flag"><img src="assets/flags/vn.png" alt="Vietnam" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Vietnam</span><span class="cp-code">+84</span></li>
+      <li class="cp-item" data-code="+95" data-name="Myanmar" data-iso="mm"><span class="cp-flag"><img src="assets/flags/mm.png" alt="Myanmar" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Myanmar</span><span class="cp-code">+95</span></li>
+      <li class="cp-item" data-code="+61" data-name="Australia" data-iso="au"><span class="cp-flag"><img src="assets/flags/au.png" alt="Australia" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Australia</span><span class="cp-code">+61</span></li>
+      <li class="cp-item" data-code="+64" data-name="New Zealand" data-iso="nz"><span class="cp-flag"><img src="assets/flags/nz.png" alt="New Zealand" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">New Zealand</span><span class="cp-code">+64</span></li>
+      <li class="cp-item" data-code="+55" data-name="Brazil" data-iso="br"><span class="cp-flag"><img src="assets/flags/br.png" alt="Brazil" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Brazil</span><span class="cp-code">+55</span></li>
+      <li class="cp-item" data-code="+52" data-name="Mexico" data-iso="mx"><span class="cp-flag"><img src="assets/flags/mx.png" alt="Mexico" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Mexico</span><span class="cp-code">+52</span></li>
+      <li class="cp-item" data-code="+54" data-name="Argentina" data-iso="ar"><span class="cp-flag"><img src="assets/flags/ar.png" alt="Argentina" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Argentina</span><span class="cp-code">+54</span></li>
+      <li class="cp-item" data-code="+56" data-name="Chile" data-iso="cl"><span class="cp-flag"><img src="assets/flags/cl.png" alt="Chile" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Chile</span><span class="cp-code">+56</span></li>
+      <li class="cp-item" data-code="+57" data-name="Colombia" data-iso="co"><span class="cp-flag"><img src="assets/flags/co.png" alt="Colombia" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Colombia</span><span class="cp-code">+57</span></li>
+      <li class="cp-item" data-code="+51" data-name="Peru" data-iso="pe"><span class="cp-flag"><img src="assets/flags/pe.png" alt="Peru" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Peru</span><span class="cp-code">+51</span></li>
+      <li class="cp-item" data-code="+58" data-name="Venezuela" data-iso="ve"><span class="cp-flag"><img src="assets/flags/ve.png" alt="Venezuela" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Venezuela</span><span class="cp-code">+58</span></li>
+      <li class="cp-item" data-code="+593" data-name="Ecuador" data-iso="ec"><span class="cp-flag"><img src="assets/flags/ec.png" alt="Ecuador" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Ecuador</span><span class="cp-code">+593</span></li>
+      <li class="cp-item" data-code="+972" data-name="Israel" data-iso="il"><span class="cp-flag"><img src="assets/flags/il.png" alt="Israel" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Israel</span><span class="cp-code">+972</span></li>
+      <li class="cp-item" data-code="+98" data-name="Iran" data-iso="ir"><span class="cp-flag"><img src="assets/flags/ir.png" alt="Iran" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Iran</span><span class="cp-code">+98</span></li>
+      <li class="cp-item" data-code="+964" data-name="Iraq" data-iso="iq"><span class="cp-flag"><img src="assets/flags/iq.png" alt="Iraq" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Iraq</span><span class="cp-code">+964</span></li>
+      <li class="cp-item" data-code="+961" data-name="Lebanon" data-iso="lb"><span class="cp-flag"><img src="assets/flags/lb.png" alt="Lebanon" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Lebanon</span><span class="cp-code">+961</span></li>
+      <li class="cp-item" data-code="+962" data-name="Jordan" data-iso="jo"><span class="cp-flag"><img src="assets/flags/jo.png" alt="Jordan" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Jordan</span><span class="cp-code">+962</span></li>
+      <li class="cp-item" data-code="+965" data-name="Kuwait" data-iso="kw"><span class="cp-flag"><img src="assets/flags/kw.png" alt="Kuwait" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Kuwait</span><span class="cp-code">+965</span></li>
+      <li class="cp-item" data-code="+974" data-name="Qatar" data-iso="qa"><span class="cp-flag"><img src="assets/flags/qa.png" alt="Qatar" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Qatar</span><span class="cp-code">+974</span></li>
+      <li class="cp-item" data-code="+973" data-name="Bahrain" data-iso="bh"><span class="cp-flag"><img src="assets/flags/bh.png" alt="Bahrain" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Bahrain</span><span class="cp-code">+973</span></li>
+      <li class="cp-item" data-code="+968" data-name="Oman" data-iso="om"><span class="cp-flag"><img src="assets/flags/om.png" alt="Oman" class="cp-flag-img" width="20" height="15" loading="lazy"></span><span class="cp-name">Oman</span><span class="cp-code">+968</span></li>
+    </ul>
+    <div class="cp-no-result" id="cp-no-result" style="display:none;">No country found</div>
+  </div>
+</body>
+</html>
